@@ -31,5 +31,62 @@ var minivowlresult={
    "uri": "http://academic-meta-tool.xyz/vocab#RoleChainAxiom"
   }
  ],
- "links": []
+ "links": [
+  {
+   "source": 3,
+   "target": 2,
+   "valueTo": "hasTarget",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/ns/oa#hasTarget"
+  },
+  {
+   "source": 2,
+   "target": 1,
+   "valueTo": "domain",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#domain"
+  },
+  {
+   "source": 2,
+   "target": 1,
+   "valueTo": "range",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#range"
+  },
+  {
+   "source": 4,
+   "target": 0,
+   "valueTo": "logic",
+   "propertyTo": "class",
+   "uriTo": "http://academic-meta-tool.xyz/vocab#logic"
+  },
+  {
+   "source": 4,
+   "target": 2,
+   "valueTo": "antecedent1",
+   "propertyTo": "class",
+   "uriTo": "http://academic-meta-tool.xyz/vocab#antecedent1"
+  },
+  {
+   "source": 2,
+   "target": 3,
+   "valueTo": "isDefinedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  },
+  {
+   "source": 4,
+   "target": 2,
+   "valueTo": "consequent",
+   "propertyTo": "class",
+   "uriTo": "http://academic-meta-tool.xyz/vocab#consequent"
+  },
+  {
+   "source": 4,
+   "target": 2,
+   "valueTo": "antecedent2",
+   "propertyTo": "class",
+   "uriTo": "http://academic-meta-tool.xyz/vocab#antecedent2"
+  }
+ ]
 }

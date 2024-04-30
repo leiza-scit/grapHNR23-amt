@@ -50,7 +50,7 @@ var tree={
         "data": {}
       },
       {
-        "id": "http://leiza-scit.sparqlunicorn.cloud/amtlimes/nonns_ProductLogic.html",
+        "id": "http://academic-meta-tool.xyz/vocab#ProductLogic",
         "parent": "http://academic-meta-tool.xyz/vocab#Logic",
         "type": "instance",
         "text": "ProductLogic (amt:ProductLogic)",
@@ -215,10 +215,10 @@ var tree={
         "data": {}
       },
       {
-        "id": "n5a6a85c1204942b8999631af9a4facebb1",
+        "id": "n2742ae28019e43a28f93e47d0d8863c1b1",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "n5a6a85c1204942b8999631af9a4facebb1 (n5a6a85c1204942b8999631af9a4facebb1)",
+        "text": "n2742ae28019e43a28f93e47d0d8863c1b1 (n2742ae28019e43a28f93e47d0d8863c1b1)",
         "data": {}
       },
       {

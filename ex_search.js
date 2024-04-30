@@ -4,7 +4,6 @@ var search={
   "Hadrian's Wall": "http://leiza-scit.sparqlunicorn.cloud/amtlimes/HW",
   "Limes Part": "http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart",
   "North Sea Coast": "http://leiza-scit.sparqlunicorn.cloud/amtlimes/NSC",
-  "ProductLogic": "http://leiza-scit.sparqlunicorn.cloud/amtlimes/nonns_ProductLogic.html",
   "Role Instances Collection": "http://leiza-scit.sparqlunicorn.cloud/amtlimes/Role_collection",
   "RoleChainAxiom Instances Collection": "http://leiza-scit.sparqlunicorn.cloud/amtlimes/RoleChainAxiom_collection",
   "Wetteraulimes": "http://leiza-scit.sparqlunicorn.cloud/amtlimes/WL",
