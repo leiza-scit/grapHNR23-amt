@@ -24,7 +24,7 @@ jobs:
       prefixns: http://leiza-scit.sparqlunicorn.cloud/amtlimes/
       prefixnsshort: ex
       indexpages: true
-      metadatatable: false
+      metadatatable: true
       createcollections: true
       createVOWL: true
       preferredlang: en
