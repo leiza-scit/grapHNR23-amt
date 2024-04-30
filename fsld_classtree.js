@@ -94,6 +94,11 @@ var tree={
             "http://academic-meta-tool.xyz/vocab#placeholder": {
               "instancecount": 1
             },
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 1,
+              "http://www.w3.org/ns/adms#Asset": 1,
+              "http://rdfs.org/ns/void#Dataset": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
             },
@@ -119,7 +124,7 @@ var tree={
             }
           }
         },
-        "instancecount": 3
+        "instancecount": 4
       },
       {
         "id": "http://leiza-scit.sparqlunicorn.cloud/amtlimes/b",
@@ -163,6 +168,11 @@ var tree={
         "text": "Role (amt:Role) [5]",
         "data": {
           "to": {
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 1,
+              "http://www.w3.org/ns/adms#Asset": 1,
+              "http://rdfs.org/ns/void#Dataset": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
             },
@@ -182,7 +192,7 @@ var tree={
             }
           },
           "from": {
-            "http://academic-meta-tool.xyz/vocab#antecedent1": {
+            "http://academic-meta-tool.xyz/vocab#antecedent2": {
               "instancecount": 0,
               "http://academic-meta-tool.xyz/vocab#RoleChainAxiom": 1
             },
@@ -195,7 +205,7 @@ var tree={
             }
           }
         },
-        "instancecount": 5
+        "instancecount": 6
       },
       {
         "id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
@@ -205,10 +215,10 @@ var tree={
         "data": {}
       },
       {
-        "id": "n25733637beb841a291f4fc4d1330c691b1",
+        "id": "n44dc0bfa8b0d4d1d8da52d1d82ab2c51b1",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "n25733637beb841a291f4fc4d1330c691b1",
+        "text": "n44dc0bfa8b0d4d1d8da52d1d82ab2c51b1 (n44dc0bfa8b0d4d1d8da52d1d82ab2c51b1)",
         "data": {}
       },
       {
@@ -216,7 +226,32 @@ var tree={
         "parent": "#",
         "type": "class",
         "text": "Annotation (oa:Annotation) [1]",
-        "data": {}
+        "data": {
+          "to": {
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 1,
+              "http://www.w3.org/ns/adms#Asset": 1,
+              "http://rdfs.org/ns/void#Dataset": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/ns/oa#hasBody": {
+              "instancecount": 1
+            },
+            "http://www.w3.org/ns/oa#hasTarget": {
+              "instancecount": 1,
+              "http://academic-meta-tool.xyz/vocab#Role": 1
+            }
+          },
+          "from": {
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
+              "instancecount": 0,
+              "http://academic-meta-tool.xyz/vocab#Role": 1
+            }
+          }
+        },
+        "instancecount": 4
       },
       {
         "id": "http://leiza-scit.sparqlunicorn.cloud/amtlimes/RCA0001",
@@ -255,6 +290,11 @@ var tree={
               "instancecount": 1,
               "http://academic-meta-tool.xyz/vocab#Logic": 1
             },
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 1,
+              "http://www.w3.org/ns/adms#Asset": 1,
+              "http://rdfs.org/ns/void#Dataset": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
             }
@@ -266,7 +306,7 @@ var tree={
             }
           }
         },
-        "instancecount": 5
+        "instancecount": 6
       },
       {
         "id": "http://academic-meta-tool.xyz/vocab#InferenceAxiom",
@@ -303,6 +343,11 @@ var tree={
         "text": "Collection (skos:Collection) [3]",
         "data": {
           "to": {
+            "http://rdfs.org/ns/void#inDataset": {
+              "instancecount": 1,
+              "http://www.w3.org/ns/adms#Asset": 1,
+              "http://rdfs.org/ns/void#Dataset": 1
+            },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
             },
@@ -310,14 +355,53 @@ var tree={
               "instancecount": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#member": {
-              "instancecount": 5,
-              "http://academic-meta-tool.xyz/vocab#Role": 5
+              "instancecount": 2,
+              "http://academic-meta-tool.xyz/vocab#RoleChainAxiom": 2
             }
           },
           "from": {}
         },
-        "instancecount": 7
+        "instancecount": 6
       }
     ]
+  },
+  "@context": {
+    "@version": 1.1,
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ct": "http://purl.org/vocab/classtree#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "icon": "foaf:image",
+    "id": "@id",
+    "parent": "rdfs:subClassOf",
+    "halfgeoclass": "ct:HalfGeoClass",
+    "geoclass": {
+      "@type": "ct:icontype",
+      "@id": "ct:GeoClass"
+    },
+    "collectionclass": {
+      "@type": "ct:icontype",
+      "@id": "ct:CollectionClass"
+    },
+    "featurecollectionclass": {
+      "@type": "ct:icontype",
+      "@id": "ct:FeatureCollectionClass"
+    },
+    "class": "owl:Class",
+    "instance": "owl:NamedIndividual",
+    "geoinstance": {
+      "@type": "ct:Icontype",
+      "@id": "ct:GeoNamedIndividual"
+    },
+    "text": "rdfs:label",
+    "type": "ct:icontype",
+    "types": "ct:icontypes",
+    "core": {
+      "@type": "ct:TreeConfig",
+      "@id": "@nest"
+    },
+    "data": {
+      "@id": "ct:treeitem",
+      "@type": "ct:TreeItem"
+    }
   }
 }
