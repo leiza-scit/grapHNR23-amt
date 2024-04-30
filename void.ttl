@@ -40,13 +40,6 @@
     void:triples 2,
         8 .
 
-<http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_www.w3.org_2004_02_skos_core_> a void:Linkset ;
-    rdfs:label "Linkset: Limes_Example - skos:"@en ;
-    void:linkPredicate rdf:type ;
-    void:objectsTarget skos: ;
-    void:subjectsTarget <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example> ;
-    void:triples 3 .
-
 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_www.w3.org_2006_time_> a void:Linkset ;
     rdfs:label "Linkset: Limes_Example - time:"@en ;
     void:linkPredicate rdfs:isDefinedBy ;
@@ -154,8 +147,7 @@
 
 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/skos_Limes_Example_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/2004/02/skos/core# in Limes_Example" ;
-    voaf:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example> ;
-    voaf:occurrences 6 .
+    voaf:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example> .
 
 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/sosa_Limes_Example_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/sosa/ in Limes_Example" ;
@@ -215,46 +207,21 @@ vext: a voaf:Vocabulary ;
     vann:preferredNamespaceUri "http://ldf.fi/void-ext#"^^xsd:anyURI ;
     voaf:usageInDataset vext:_Limes_Example_occ .
 
-<http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Annotation> a void:Dataset ;
-    rdfs:label "Class Partition: Annotation"@en ;
-    void:class <http://www.w3.org/ns/oa#Annotation> ;
-    void:entities 1 .
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Axiom> a void:Dataset ;
+    rdfs:label "Class Partition: Axiom"@en ;
+    void:class <http://academic-meta-tool.xyz/vocab#Axiom> .
 
 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Class> a void:Dataset ;
     rdfs:label "Class Partition: Class"@en ;
     void:class rdfs:Class .
 
-<http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Collection> a void:Dataset ;
-    rdfs:label "Class Partition: Collection"@en ;
-    void:class skos:Collection ;
-    void:entities 3 .
-
 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Concept> a void:Dataset ;
     rdfs:label "Class Partition: Concept"@en ;
-    void:class <http://academic-meta-tool.xyz/vocab#Concept> ;
-    void:entities 1 .
-
-<http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_InferenceAxiom> a void:Dataset ;
-    rdfs:label "Class Partition: InferenceAxiom"@en ;
-    void:class <http://academic-meta-tool.xyz/vocab#InferenceAxiom> .
+    void:class <http://academic-meta-tool.xyz/vocab#Concept> .
 
 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Logic> a void:Dataset ;
     rdfs:label "Class Partition: Logic"@en ;
     void:class <http://academic-meta-tool.xyz/vocab#Logic> .
-
-<http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Property> a void:Dataset ;
-    rdfs:label "Class Partition: Property"@en ;
-    void:class rdf:Property .
-
-<http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Role> a void:Dataset ;
-    rdfs:label "Class Partition: Role"@en ;
-    void:class <http://academic-meta-tool.xyz/vocab#Role> ;
-    void:entities 5 .
-
-<http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_RoleChainAxiom> a void:Dataset ;
-    rdfs:label "Class Partition: RoleChainAxiom"@en ;
-    void:class <http://academic-meta-tool.xyz/vocab#RoleChainAxiom> ;
-    void:entities 2 .
 
 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_antecedent1> a void:Dataset ;
     rdfs:label "Property Partition: antecedent1"@en ;
@@ -450,6 +417,12 @@ owl: a voaf:Vocabulary ;
     vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#"^^xsd:anyURI ;
     voaf:usageInDataset owl:_Limes_Example_occ .
 
+skos: a voaf:Vocabulary ;
+    rdfs:label "skos Vocabulary"@en ;
+    vann:preferredNamespacePrefix "skos"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ;
+    voaf:usageInDataset skos:_Limes_Example_occ .
+
 xml: a voaf:Vocabulary ;
     rdfs:label "xml Vocabulary"@en ;
     vann:preferredNamespacePrefix "xml"^^xsd:string ;
@@ -544,12 +517,6 @@ wgs: a voaf:Vocabulary ;
     vann:preferredNamespaceUri "https://www.w3.org/2003/01/geo/wgs84_pos#"^^xsd:anyURI ;
     voaf:usageInDataset wgs:_Limes_Example_occ .
 
-skos: a voaf:Vocabulary ;
-    rdfs:label "skos Vocabulary"@en ;
-    vann:preferredNamespacePrefix "skos"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ;
-    voaf:usageInDataset skos:_Limes_Example_occ .
-
 time: a voaf:Vocabulary ;
     rdfs:label "time Vocabulary"@en ;
     vann:preferredNamespacePrefix "time"^^xsd:string ;
@@ -559,19 +526,19 @@ time: a voaf:Vocabulary ;
 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example> a void:Dataset,
         adms:Asset ;
     rdfs:label "Limes_Example"@en ;
-    vext:averageLiteralLength 13 ;
-    vext:averageObjectIRILength 51 ;
+    vext:averageLiteralLength 0 ;
+    vext:averageObjectIRILength 44 ;
     vext:averagePropertyIRILength 44 ;
-    vext:averageSubjectIRILength 48 ;
+    vext:averageSubjectIRILength 45 ;
     vext:datatypes 0 ;
     vext:distinctBlankNodes 5 ;
-    vext:distinctIRIReferences 99 ;
-    vext:distinctLiterals 18 ;
-    vext:distinctRDFNodes 122 ;
-    vext:languages 1 ;
+    vext:distinctIRIReferences 96 ;
+    vext:distinctLiterals 0 ;
+    vext:distinctRDFNodes 101 ;
+    vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-04-30T10:48:08"^^xsd:dateTime ;
+    dcterms:modified "2024-04-30T10:50:39"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -580,20 +547,15 @@ time: a voaf:Vocabulary ;
     dcterms:title "Limes_Example"@en ;
     vann:preferredNamespacePrefix "fsld"^^xsd:string ;
     vann:preferredNamespaceUri "http://leiza-scit.sparqlunicorn.cloud/amtlimes/"^^xsd:anyURI ;
-    void:classPartition <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Annotation>,
+    void:classPartition <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Axiom>,
         <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Class>,
-        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Collection>,
         <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Concept>,
-        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_InferenceAxiom>,
-        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Logic>,
-        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Property>,
-        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Role>,
-        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_RoleChainAxiom> ;
-    void:classes 9 ;
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_Logic> ;
+    void:classes 6 ;
     void:dataDump <https://leiza-scit.github.io/grapHNR23-amt//index.ttl> ;
     void:distinctObjects 44 ;
-    void:distinctSubjects 34 ;
-    void:entities 21 ;
+    void:distinctSubjects 31 ;
+    void:entities 18 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
     void:properties 21 ;
@@ -618,7 +580,7 @@ time: a voaf:Vocabulary ;
         <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_subject>,
         <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_type>,
         <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example_weight> ;
-    void:triples 114 ;
+    void:triples 97 ;
     void:uriSpace "http://leiza-scit.sparqlunicorn.cloud/amtlimes/"^^xsd:string ;
     void:vocabulary vext:,
         dcam:,
