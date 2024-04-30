@@ -1,0 +1,12 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/sb> a <http://academic-meta-tool.xyz/vocab#Role>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "survived by" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdfs:domain <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> ;
+    rdfs:isDefinedBy [ ] ;
+    rdfs:range <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> .
+

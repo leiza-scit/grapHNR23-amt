@@ -1,0 +1,107 @@
+@prefix ns1: <http://www.w3.org/ns/solid/terms#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl> a <http://www.w3.org/ns/ldp#RDFResource>,
+        ns1:ListedDocument,
+        ns1:TypeIndex ;
+    rdfs:label "Public Type Index"@en ;
+    rdfs:comment "This Document contains a list of links to other Documents, along with the type of data that is to be included in those Documents"@en ;
+    rdfs:member <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Annotation>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Class>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Collection>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Concept>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Concept_collection>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#GoedelLogic>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#InferenceAxiom>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#LimesPart>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Logic>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#LukasiewiczLogic>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Property>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#RCA0001>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#RCA0002>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Role>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#RoleChainAxiom>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#RoleChainAxiom_collection>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Role_collection>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#a>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#b>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#eq>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#f>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#nc3bbe47819c14fe297280ced69343998b1>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#nonns_ProductLogic.html>,
+        <https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#sb> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Annotation> ns1:forClass <#> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//Annotation> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Class> ns1:forClass <#> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//Class> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Collection> ns1:forClass <#> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//Collection> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Concept> ns1:forClass rdfs:Class ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//Concept> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Concept_collection> ns1:forClass skos:Collection ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//Concept_collection> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#GoedelLogic> ns1:forClass <http://academic-meta-tool.xyz/vocab#Logic> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//GoedelLogic> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#InferenceAxiom> ns1:forClass <#> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//InferenceAxiom> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#LimesPart> ns1:forClass <http://academic-meta-tool.xyz/vocab#Concept> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//LimesPart> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Logic> ns1:forClass rdfs:Class ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//Logic> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#LukasiewiczLogic> ns1:forClass <http://academic-meta-tool.xyz/vocab#Logic> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//LukasiewiczLogic> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Property> ns1:forClass <#> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//Property> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#RCA0001> ns1:forClass <http://academic-meta-tool.xyz/vocab#RoleChainAxiom> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//RCA0001> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#RCA0002> ns1:forClass <http://academic-meta-tool.xyz/vocab#RoleChainAxiom> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//RCA0002> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Role> ns1:forClass rdf:Property ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//Role> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#RoleChainAxiom> ns1:forClass <http://academic-meta-tool.xyz/vocab#InferenceAxiom> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//RoleChainAxiom> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#RoleChainAxiom_collection> ns1:forClass skos:Collection ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//RoleChainAxiom_collection> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#Role_collection> ns1:forClass skos:Collection ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//Role_collection> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#a> ns1:forClass <http://academic-meta-tool.xyz/vocab#Role> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//a> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#b> ns1:forClass <http://academic-meta-tool.xyz/vocab#Role> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//b> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#eq> ns1:forClass <http://academic-meta-tool.xyz/vocab#Role> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//eq> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#f> ns1:forClass <http://academic-meta-tool.xyz/vocab#Role> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//f> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#nc3bbe47819c14fe297280ced69343998b1> ns1:forClass <http://www.w3.org/ns/oa#Annotation> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//nc3bbe47819c14fe297280ced69343998b1> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#nonns_ProductLogic.html> ns1:forClass <http://academic-meta-tool.xyz/vocab#Logic> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//nonns_ProductLogic.html> .
+
+<https://leiza-scit.github.io/grapHNR23-amt//settings/publicTypeIndex.ttl#sb> ns1:forClass <http://academic-meta-tool.xyz/vocab#Role> ;
+    ns1:instance <https://leiza-scit.github.io/grapHNR23-amt//sb> .
+

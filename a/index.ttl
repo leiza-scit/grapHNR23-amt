@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/a> a <http://academic-meta-tool.xyz/vocab#Role>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "after" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdfs:domain <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> ;
+    rdfs:isDefinedBy time:intervalAfter ;
+    rdfs:range <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> .
+

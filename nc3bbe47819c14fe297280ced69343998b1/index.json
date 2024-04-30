@@ -1,0 +1,1 @@
+{"http://rdfs.org/ns/void#inDataset": ["http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset"], "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": ["http://www.w3.org/ns/oa#Annotation"], "http://www.w3.org/ns/oa#hasBody": ["http://www.wikidata.org/entity/Q125700932"], "http://www.w3.org/ns/oa#hasTarget": ["http://leiza-scit.sparqlunicorn.cloud/amtlimes/sb"]}

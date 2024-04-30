@@ -1,0 +1,12 @@
+@prefix ns1: <http://academic-meta-tool.xyz/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+[] a <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    ns1:weight "0.774" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdf:object <http://leiza-scit.sparqlunicorn.cloud/amtlimes/NSC> ;
+    rdf:predicate <http://leiza-scit.sparqlunicorn.cloud/amtlimes/b> ;
+    rdf:subject <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ES> .
+

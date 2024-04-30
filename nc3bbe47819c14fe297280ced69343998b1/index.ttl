@@ -1,0 +1,10 @@
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+[] a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:Annotation,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    ns1:hasBody <http://www.wikidata.org/entity/Q125700932> ;
+    ns1:hasTarget <http://leiza-scit.sparqlunicorn.cloud/amtlimes/sb> .
+

@@ -1,0 +1,539 @@
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://ldf.fi/void-ext#> .
+@prefix ns2: <http://www.w3.org/ns/oa#> .
+@prefix ns3: <http://academic-meta-tool.xyz/vocab#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/Concept_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Concept Instances Collection"@en ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdfs:member <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/RoleChainAxiom_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "RoleChainAxiom Instances Collection"@en ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdfs:member <http://leiza-scit.sparqlunicorn.cloud/amtlimes/RCA0001>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/RCA0002> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/Role_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Role Instances Collection"@en ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdfs:member <http://leiza-scit.sparqlunicorn.cloud/amtlimes/a>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/b>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/eq>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/f>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/sb> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_academic-meta-tool.xyz_vocab_> a void:Linkset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Linkset: ae_dataset - amt:"@en ;
+    void:linkPredicate ns3:logic,
+        rdf:type ;
+    void:objectsTarget ns3: ;
+    void:subjectsTarget <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    void:triples 2,
+        8 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_www.w3.org_2004_02_skos_core_> a void:Linkset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Linkset: ae_dataset - skos:"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget skos: ;
+    void:subjectsTarget <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    void:triples 3 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_www.w3.org_2006_time_> a void:Linkset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Linkset: ae_dataset - time:"@en ;
+    void:linkPredicate rdfs:isDefinedBy ;
+    void:objectsTarget time: ;
+    void:subjectsTarget <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    void:triples 4 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_www.w3.org_ns_oa_> a void:Linkset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Linkset: ae_dataset - Web Annotation Ontology (oa:)"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget ns2: ;
+    void:subjectsTarget <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    void:triples 1 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_www.wikidata.org_entity_> a void:Linkset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Linkset: ae_dataset - Wikidata Entities (wde:)"@en ;
+    void:linkPredicate ns2:hasBody ;
+    void:objectsTarget <http://www.wikidata.org/entity/> ;
+    void:subjectsTarget <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    void:triples 1 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/HW> a <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Hadrian's Wall" ;
+    ns3:instanceOf <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/RCA0001> a ns3:RoleChainAxiom,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    ns3:antecedent1 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/eq> ;
+    ns3:antecedent2 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/a> ;
+    ns3:consequent <http://leiza-scit.sparqlunicorn.cloud/amtlimes/a> ;
+    ns3:logic ns3:ProductLogic ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/RCA0002> a ns3:RoleChainAxiom,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    ns3:antecedent1 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/b> ;
+    ns3:antecedent2 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/f> ;
+    ns3:consequent <http://leiza-scit.sparqlunicorn.cloud/amtlimes/sb> ;
+    ns3:logic ns3:ProductLogic ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_antecedent1> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: antecedent1"@en ;
+    void:property ns3:antecedent1 ;
+    void:triples 2 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_antecedent2> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: antecedent2"@en ;
+    void:property ns3:antecedent2 ;
+    void:triples 2 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_consequent> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: consequent"@en ;
+    void:property ns3:consequent ;
+    void:triples 2 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_domain> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: domain"@en ;
+    void:property rdfs:domain ;
+    void:triples 5 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_hasBody> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: hasBody"@en ;
+    void:property ns2:hasBody ;
+    void:triples 1 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_hasChapter> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: hasChapter"@en ;
+    void:property <http://purl.org/net/nknouf/ns/bibtex#hasChapter> ;
+    void:triples 1 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_hasPages> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: hasPages"@en ;
+    void:property <http://purl.org/net/nknouf/ns/bibtex#hasPages> ;
+    void:triples 1 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_hasTarget> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: hasTarget"@en ;
+    void:property ns2:hasTarget ;
+    void:triples 1 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_instanceOf> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: instanceOf"@en ;
+    void:property ns3:instanceOf ;
+    void:triples 4 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_isDefinedBy> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: isDefinedBy"@en ;
+    void:property rdfs:isDefinedBy ;
+    void:triples 5 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_label> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: label"@en ;
+    void:property rdfs:label ;
+    void:triples 10 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_logic> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: logic"@en ;
+    void:property ns3:logic ;
+    void:triples 2 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_object> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: object"@en ;
+    void:property rdf:object ;
+    void:triples 4 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_placeholder> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: placeholder"@en ;
+    void:property ns3:placeholder ;
+    void:triples 1 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_predicate> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: predicate"@en ;
+    void:property rdf:predicate ;
+    void:triples 4 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_range> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: range"@en ;
+    void:property rdfs:range ;
+    void:triples 5 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_subClassOf> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: subClassOf"@en ;
+    void:property rdfs:subClassOf ;
+    void:triples 9 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_subclassOf> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: subclassOf"@en ;
+    void:property rdfs:subclassOf ;
+    void:triples 1 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_subject> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: subject"@en ;
+    void:property rdf:subject ;
+    void:triples 4 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_type> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: type"@en ;
+    void:property rdf:type ;
+    void:triples 12 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_weight> a void:Dataset,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Property Partition: weight"@en ;
+    void:property ns3:weight ;
+    void:triples 4 .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ES> a <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Elisabethenstraße" ;
+    ns3:instanceOf <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/NSC> a <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "North Sea Coast" ;
+    ns3:instanceOf <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/WL> a <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Wetteraulimes" ;
+    ns3:instanceOf <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/b> a ns3:Role,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "before" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdfs:domain <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> ;
+    rdfs:isDefinedBy time:intervalBefore ;
+    rdfs:range <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/eq> a ns3:Role,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "equals" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdfs:domain <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> ;
+    rdfs:isDefinedBy time:intervalEquals ;
+    rdfs:range <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/f> a ns3:Role,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "finishes" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdfs:domain <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> ;
+    rdfs:isDefinedBy time:intervalFinishes ;
+    rdfs:range <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/sb> a ns3:Role,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "survived by" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdfs:domain <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> ;
+    rdfs:isDefinedBy [ a <http://www.w3.org/ns/ldp#BasicContainer>,
+                <http://www.w3.org/ns/ldp#Container>,
+                <http://www.w3.org/ns/ldp#Resource>,
+                ns2:Annotation ;
+            void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+            ns2:hasBody <http://www.wikidata.org/entity/Q125700932> ;
+            ns2:hasTarget <http://leiza-scit.sparqlunicorn.cloud/amtlimes/sb> ] ;
+    rdfs:range <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/a> a ns3:Role,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "after" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdfs:domain <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> ;
+    rdfs:isDefinedBy time:intervalAfter ;
+    rdfs:range <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> a ns3:Concept,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "Limes Part" ;
+    ns3:placeholder "Name of a part of the Limes" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> .
+
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> a void:Dataset,
+        <http://www.w3.org/ns/adms#Asset>,
+        <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    rdfs:label "ae_dataset"@en ;
+    ns1:averageLiteralLength 13 ;
+    ns1:averageObjectIRILength 50 ;
+    ns1:averagePropertyIRILength 44 ;
+    ns1:averageSubjectIRILength 48 ;
+    ns1:datatypes 0 ;
+    ns1:distinctBlankNodes 5 ;
+    ns1:distinctIRIReferences 99 ;
+    ns1:distinctLiterals 18 ;
+    ns1:distinctRDFNodes 122 ;
+    ns1:languages 1 ;
+    ns1:propertyClasses 0 ;
+    dc:language <http://www.lexvo.org/page/iso639-1/en> ;
+    dcterms:modified "2024-04-30T10:43:06"^^xsd:dateTime ;
+    dcterms:subject <http://dbpedia.org/resource/Location>,
+        <http://dbpedia.org/resource/OGC_GeoSPARQL>,
+        <http://dbpedia.org/resource/Time>,
+        <http://www.wikidata.org/entity/Q121810372>,
+        foaf:Person ;
+    dcterms:title "ae_dataset"@en ;
+    vann:preferredNamespacePrefix "ae"^^xsd:string ;
+    vann:preferredNamespaceUri "http://leiza-scit.sparqlunicorn.cloud/amtlimes/"^^xsd:anyURI ;
+    void:classPartition <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_Annotation>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_Class>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_Collection>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_Concept>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_InferenceAxiom>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_Logic>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_Property>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_Role>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_RoleChainAxiom> ;
+    void:classes 9 ;
+    void:dataDump <https://leiza-scit.github.io/grapHNR23-amt//index.ttl> ;
+    void:distinctObjects 44 ;
+    void:distinctSubjects 34 ;
+    void:entities 21 ;
+    void:feature <http://www.w3.org/ns/formats/RDFa>,
+        <http://www.w3.org/ns/formats/Turtle> ;
+    void:properties 21 ;
+    void:propertyPartition <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_antecedent1>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_antecedent2>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_consequent>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_domain>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_hasBody>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_hasChapter>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_hasPages>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_hasTarget>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_instanceOf>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_isDefinedBy>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_label>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_logic>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_object>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_placeholder>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_predicate>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_range>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_subClassOf>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_subclassOf>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_subject>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_type>,
+        <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_weight> ;
+    void:triples 114 ;
+    void:uriSpace "http://leiza-scit.sparqlunicorn.cloud/amtlimes/"^^xsd:string ;
+    void:vocabulary ns1:,
+        dcam:,
+        dcmitype:,
+        dc:,
+        dcterms:,
+        qb:,
+        vann:,
+        <http://purl.org/vocommons/voaf#>,
+        void:,
+        doap:,
+        geo:,
+        rdf:,
+        rdfs:,
+        xsd:,
+        owl:,
+        skos:,
+        time:,
+        xml:,
+        <http://www.w3.org/ns/adms#>,
+        csvw:,
+        dcat:,
+        prof:,
+        odrl:,
+        org:,
+        prov:,
+        sh:,
+        sosa:,
+        ssn:,
+        foaf:,
+        brick:,
+        schema:,
+        wgs: ;
+    dcat:distribution <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset_dist_ttl> ;
+    dcat:keyword "Location"@en,
+        "OGC GeoSPARQL"@en,
+        "Person"@en,
+        "Q121810372"@en,
+        "Time"@en ;
+    dcat:landingPage <https://leiza-scit.github.io/grapHNR23-amt/> ;
+    foaf:homepage <https://leiza-scit.github.io/grapHNR23-amt/> ;
+    foaf:page <https://leiza-scit.github.io/grapHNR23-amt//index.html> .
+
+[] a <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    ns3:weight "0.645" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdf:object <http://leiza-scit.sparqlunicorn.cloud/amtlimes/WL> ;
+    rdf:predicate <http://leiza-scit.sparqlunicorn.cloud/amtlimes/eq> ;
+    rdf:subject <http://leiza-scit.sparqlunicorn.cloud/amtlimes/HW> .
+
+[] a <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    ns3:weight "0.970" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdf:object <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ES> ;
+    rdf:predicate <http://leiza-scit.sparqlunicorn.cloud/amtlimes/a> ;
+    rdf:subject <http://leiza-scit.sparqlunicorn.cloud/amtlimes/WL> .
+
+[] a <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    ns3:weight "0.774" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdf:object <http://leiza-scit.sparqlunicorn.cloud/amtlimes/NSC> ;
+    rdf:predicate <http://leiza-scit.sparqlunicorn.cloud/amtlimes/b> ;
+    rdf:subject <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ES> .
+
+[] a <http://www.w3.org/ns/ldp#BasicContainer>,
+        <http://www.w3.org/ns/ldp#Container>,
+        <http://www.w3.org/ns/ldp#Resource> ;
+    ns3:weight "0.808" ;
+    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> ;
+    rdf:object <http://leiza-scit.sparqlunicorn.cloud/amtlimes/WL> ;
+    rdf:predicate <http://leiza-scit.sparqlunicorn.cloud/amtlimes/f> ;
+    rdf:subject <http://leiza-scit.sparqlunicorn.cloud/amtlimes/NSC> .
+
