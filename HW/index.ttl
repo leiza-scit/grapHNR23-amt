@@ -4,7 +4,7 @@
 
 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/HW> a <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Hadrian's Wall" ;
+    rdfs:label "HadriansWall" ;
     ns1:instanceOf <http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> ;
     void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/Limes_Example> .
 

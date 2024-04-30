@@ -40,20 +40,6 @@ var minivowlresult={
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
   },
   {
-   "source": 4,
-   "target": 0,
-   "valueTo": "logic",
-   "propertyTo": "class",
-   "uriTo": "http://academic-meta-tool.xyz/vocab#logic"
-  },
-  {
-   "source": 4,
-   "target": 2,
-   "valueTo": "consequent",
-   "propertyTo": "class",
-   "uriTo": "http://academic-meta-tool.xyz/vocab#consequent"
-  },
-  {
    "source": 2,
    "target": 1,
    "valueTo": "range",
@@ -66,6 +52,20 @@ var minivowlresult={
    "valueTo": "domain",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#domain"
+  },
+  {
+   "source": 4,
+   "target": 0,
+   "valueTo": "logic",
+   "propertyTo": "class",
+   "uriTo": "http://academic-meta-tool.xyz/vocab#logic"
+  },
+  {
+   "source": 4,
+   "target": 2,
+   "valueTo": "consequent",
+   "propertyTo": "class",
+   "uriTo": "http://academic-meta-tool.xyz/vocab#consequent"
   },
   {
    "source": 4,
