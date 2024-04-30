@@ -30,5 +30,6 @@ jobs:
       metadatatable: true
       createnonNSPages: true
       logourl: https://raw.githubusercontent.com/archaeolink-lod/unicorn-ontdoc-template-nmt/main/icons/al_circle_icon.png
+      templatedir: https://github.com/archaeolink/unicorn-ontdoc-template-archaeolink-samianresearch/archive/refs/tags/v0.5.zip
       ogcapifeatures: true
       datasettitle: Limes Example
