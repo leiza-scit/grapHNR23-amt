@@ -1,1 +1,1 @@
-{"http://academic-meta-tool.xyz/vocab#instanceOf": ["http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart"], "http://rdfs.org/ns/void#inDataset": ["http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset"], "http://www.w3.org/2000/01/rdf-schema#label": ["Hadrian's Wall"]}
+{"http://academic-meta-tool.xyz/vocab#instanceOf": ["http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart"], "http://www.w3.org/2000/01/rdf-schema#label": ["Hadrian's Wall"]}

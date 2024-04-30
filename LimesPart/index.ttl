@@ -1,11 +1,7 @@
 @prefix ns1: <http://academic-meta-tool.xyz/vocab#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix void: <http://rdfs.org/ns/void#> .
 
-<http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> a ns1:Concept,
-        <http://www.w3.org/ns/ldp#Resource>,
-        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/LimesPart> a ns1:Concept ;
     rdfs:label "Limes Part" ;
-    ns1:placeholder "Name of a part of the Limes" ;
-    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> .
+    ns1:placeholder "Name of a part of the Limes" .
 

@@ -1,12 +1,8 @@
 @prefix ns1: <http://academic-meta-tool.xyz/vocab#> .
-@prefix void: <http://rdfs.org/ns/void#> .
 
-<http://leiza-scit.sparqlunicorn.cloud/amtlimes/RCA0002> a ns1:RoleChainAxiom,
-        <http://www.w3.org/ns/ldp#Resource>,
-        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+<http://leiza-scit.sparqlunicorn.cloud/amtlimes/RCA0002> a ns1:RoleChainAxiom ;
     ns1:antecedent1 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/b> ;
     ns1:antecedent2 <http://leiza-scit.sparqlunicorn.cloud/amtlimes/f> ;
     ns1:consequent <http://leiza-scit.sparqlunicorn.cloud/amtlimes/sb> ;
-    ns1:logic ns1:ProductLogic ;
-    void:inDataset <http://leiza-scit.sparqlunicorn.cloud/amtlimes/ae_dataset> .
+    ns1:logic ns1:ProductLogic .
 
