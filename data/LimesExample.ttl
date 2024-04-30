@@ -1,0 +1,93 @@
+PREFIX amt: <http://academic-meta-tool.xyz/vocab#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX ex: <http://leiza-scit.sparqlunicorn.cloud/amtlimes/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX bibtex: <http://purl.org/net/nknouf/ns/bibtex#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+
+# AMT Ontology - Leonard Edition
+
+amt:Concept rdfs:subClassOf rdfs:Class .
+amt:Role rdfs:subClassOf rdf:Property .
+amt:Axiom rdfs:subclassOf rdfs:Class .
+amt:InferenceAxiom rdfs:subClassOf amt:Axiom .
+amt:IntegrityAxiom rdfs:subClassOf amt:Axiom .
+amt:RoleChainAxiom rdfs:subClassOf amt:InferenceAxiom .
+amt:InverseAxiom rdfs:subClassOf amt:InferenceAxiom .
+amt:DisjointAxiom rdfs:subClassOf amt:IntegrityAxiom .
+amt:SelfDisjointAxiom rdfs:subClassOf amt:IntegrityAxiom .
+amt:Logic rdfs:subClassOf rdfs:Class .
+amt:LukasiewiczLogic rdf:type amt:Logic .
+amt:ProductLogic rdf:type amt:Logic .
+amt:GoedelLogic rdf:type amt:Logic .
+
+# Dating Mechanism Ontology
+
+# concepts
+
+ex:LimesPart rdf:type amt:Concept .
+ex:LimesPart rdfs:label "Limes Part" .
+ex:LimesPart amt:placeholder "Name of a part of the Limes" .
+
+# roles time
+
+ex:b rdf:type amt:Role .
+ex:b rdfs:label 'before' .
+ex:b rdfs:domain ex:LimesPart .
+ex:b rdfs:range ex:LimesPart .
+ex:b rdfs:isDefinedBy time:intervalBefore .
+ex:a rdf:type amt:Role .
+ex:a rdfs:label 'after' .
+ex:a rdfs:domain ex:LimesPart .
+ex:a rdfs:range ex:LimesPart .
+ex:a rdfs:isDefinedBy time:intervalAfter .
+ex:f rdf:type amt:Role .
+ex:f rdfs:label 'finishes' .
+ex:f rdfs:domain ex:LimesPart .
+ex:f rdfs:range ex:LimesPart .
+ex:f rdfs:isDefinedBy time:intervalFinishes .
+ex:eq rdf:type amt:Role .
+ex:eq rdfs:label 'equals' .
+ex:eq rdfs:domain ex:LimesPart .
+ex:eq rdfs:range ex:LimesPart .
+ex:eq rdfs:isDefinedBy time:intervalEquals .
+ex:sb rdf:type amt:Role .
+ex:sb rdfs:label 'survived by' .
+ex:sb rdfs:domain ex:LimesPart .
+ex:sb rdfs:range ex:LimesPart .
+ex:sb rdfs:isDefinedBy _:bn01.
+_:bn01 rdf:type oa:Annotation .
+_:bn01 oa:hasBody wd:Q125700932 .
+_:bn01 oa:hasTarget ex:sb .
+wd:Q125700932 bibtex:hasPages "21" .
+wd:Q125700932 bibtex:hasChapter "Fig. 7" .
+
+# time RoleChainAxioms
+
+ex:RCA0001 rdf:type amt:RoleChainAxiom .
+ex:RCA0001 amt:antecedent1 ex:eq .
+ex:RCA0001 amt:antecedent2 ex:a .
+ex:RCA0001 amt:consequent ex:a .
+ex:RCA0001 amt:logic amt:ProductLogic .
+
+ex:RCA0002 rdf:type amt:RoleChainAxiom .
+ex:RCA0002 amt:antecedent1 ex:b .
+ex:RCA0002 amt:antecedent2 ex:f .
+ex:RCA0002 amt:consequent ex:sb .
+ex:RCA0002 amt:logic amt:ProductLogic .
+
+# Limes Parts concepts (Pearson correlation coefficient normalized)
+
+ex:HW amt:instanceOf ex:LimesPart. ex:HW rdfs:label "Hadrian's Wall".
+ex:WL amt:instanceOf ex:LimesPart. ex:WL rdfs:label "Wetteraulimes".
+ex:ES amt:instanceOf ex:LimesPart. ex:ES rdfs:label "Elisabethenstraße".
+ex:NSC amt:instanceOf ex:LimesPart. ex:NSC rdfs:label "North Sea Coast".
+
+# Allen interval algebra roles (Pearson correlation coefficient normalized)
+
+_:node01 rdf:subject ex:HW . _:node01 rdf:predicate ex:eq . _:node01 rdf:object ex:WL . _:node01 amt:weight "0.645" .
+_:node02 rdf:subject ex:WL . _:node02 rdf:predicate ex:a . _:node02 rdf:object ex:ES . _:node02 amt:weight "0.970" .
+_:node03 rdf:subject ex:ES . _:node03 rdf:predicate ex:b . _:node03 rdf:object ex:NSC . _:node03 amt:weight "0.774" .
+_:node04 rdf:subject ex:NSC . _:node04 rdf:predicate ex:f . _:node04 rdf:object ex:WL . _:node04 amt:weight "0.808" .
