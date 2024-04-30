@@ -80,10 +80,10 @@ ex:RCA0002 amt:logic amt:ProductLogic .
 
 # Limes Parts concepts (Pearson correlation coefficient normalized)
 
-ex:HW amt:instanceOf ex:LimesPart. ex:HW rdfs:label "Hadrian's Wall".
+ex:HW amt:instanceOf ex:LimesPart. ex:HW rdfs:label "HadriansWall".
 ex:WL amt:instanceOf ex:LimesPart. ex:WL rdfs:label "Wetteraulimes".
 ex:ES amt:instanceOf ex:LimesPart. ex:ES rdfs:label "Elisabethenstraße".
-ex:NSC amt:instanceOf ex:LimesPart. ex:NSC rdfs:label "North Sea Coast".
+ex:NSC amt:instanceOf ex:LimesPart. ex:NSC rdfs:label "NorthSeaCoast".
 
 # Allen interval algebra roles (Pearson correlation coefficient normalized)
 
