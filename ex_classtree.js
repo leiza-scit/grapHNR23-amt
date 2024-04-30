@@ -96,8 +96,8 @@ var tree={
             },
             "http://rdfs.org/ns/void#inDataset": {
               "instancecount": 1,
-              "http://www.w3.org/ns/adms#Asset": 1,
-              "http://rdfs.org/ns/void#Dataset": 1
+              "http://rdfs.org/ns/void#Dataset": 1,
+              "http://www.w3.org/ns/adms#Asset": 1
             },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
@@ -170,8 +170,8 @@ var tree={
           "to": {
             "http://rdfs.org/ns/void#inDataset": {
               "instancecount": 1,
-              "http://www.w3.org/ns/adms#Asset": 1,
-              "http://rdfs.org/ns/void#Dataset": 1
+              "http://rdfs.org/ns/void#Dataset": 1,
+              "http://www.w3.org/ns/adms#Asset": 1
             },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
@@ -192,11 +192,7 @@ var tree={
             }
           },
           "from": {
-            "http://academic-meta-tool.xyz/vocab#antecedent2": {
-              "instancecount": 0,
-              "http://academic-meta-tool.xyz/vocab#RoleChainAxiom": 1
-            },
-            "http://academic-meta-tool.xyz/vocab#consequent": {
+            "http://academic-meta-tool.xyz/vocab#antecedent1": {
               "instancecount": 0,
               "http://academic-meta-tool.xyz/vocab#RoleChainAxiom": 1
             },
@@ -219,10 +215,10 @@ var tree={
         "data": {}
       },
       {
-        "id": "na7f3e5c9b3764e41aa0a3b8a00cef1ebb1",
+        "id": "ne847f95fe51f406fb7091ed9115885b5b1",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "na7f3e5c9b3764e41aa0a3b8a00cef1ebb1 (na7f3e5c9b3764e41aa0a3b8a00cef1ebb1)",
+        "text": "ne847f95fe51f406fb7091ed9115885b5b1 (ne847f95fe51f406fb7091ed9115885b5b1)",
         "data": {}
       },
       {
@@ -234,8 +230,8 @@ var tree={
           "to": {
             "http://rdfs.org/ns/void#inDataset": {
               "instancecount": 1,
-              "http://www.w3.org/ns/adms#Asset": 1,
-              "http://rdfs.org/ns/void#Dataset": 1
+              "http://rdfs.org/ns/void#Dataset": 1,
+              "http://www.w3.org/ns/adms#Asset": 1
             },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
@@ -296,8 +292,8 @@ var tree={
             },
             "http://rdfs.org/ns/void#inDataset": {
               "instancecount": 1,
-              "http://www.w3.org/ns/adms#Asset": 1,
-              "http://rdfs.org/ns/void#Dataset": 1
+              "http://rdfs.org/ns/void#Dataset": 1,
+              "http://www.w3.org/ns/adms#Asset": 1
             },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
@@ -349,8 +345,8 @@ var tree={
           "to": {
             "http://rdfs.org/ns/void#inDataset": {
               "instancecount": 1,
-              "http://www.w3.org/ns/adms#Asset": 1,
-              "http://rdfs.org/ns/void#Dataset": 1
+              "http://rdfs.org/ns/void#Dataset": 1,
+              "http://www.w3.org/ns/adms#Asset": 1
             },
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
               "instancecount": 1
@@ -359,13 +355,13 @@ var tree={
               "instancecount": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#member": {
-              "instancecount": 2,
-              "http://academic-meta-tool.xyz/vocab#RoleChainAxiom": 2
+              "instancecount": 5,
+              "http://academic-meta-tool.xyz/vocab#Role": 5
             }
           },
           "from": {}
         },
-        "instancecount": 6
+        "instancecount": 9
       }
     ]
   },
