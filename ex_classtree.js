@@ -192,16 +192,16 @@ var tree={
             }
           },
           "from": {
-            "http://academic-meta-tool.xyz/vocab#consequent": {
+            "http://academic-meta-tool.xyz/vocab#antecedent1": {
               "instancecount": 0,
               "http://academic-meta-tool.xyz/vocab#RoleChainAxiom": 1
+            },
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": {
+              "instancecount": 0
             },
             "http://www.w3.org/2000/01/rdf-schema#member": {
               "instancecount": 0,
               "http://www.w3.org/2004/02/skos/core#Collection": 1
-            },
-            "http://www.w3.org/ns/oa#hasTarget": {
-              "instancecount": 0
             }
           }
         },
@@ -215,10 +215,10 @@ var tree={
         "data": {}
       },
       {
-        "id": "nc8c76b677df94e389a81a485ec1bdcfbb1",
+        "id": "n5a6a85c1204942b8999631af9a4facebb1",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "nc8c76b677df94e389a81a485ec1bdcfbb1 (nc8c76b677df94e389a81a485ec1bdcfbb1)",
+        "text": "n5a6a85c1204942b8999631af9a4facebb1 (n5a6a85c1204942b8999631af9a4facebb1)",
         "data": {}
       },
       {
@@ -355,13 +355,13 @@ var tree={
               "instancecount": 1
             },
             "http://www.w3.org/2000/01/rdf-schema#member": {
-              "instancecount": 5,
-              "http://academic-meta-tool.xyz/vocab#Role": 5
+              "instancecount": 2,
+              "http://academic-meta-tool.xyz/vocab#RoleChainAxiom": 2
             }
           },
           "from": {}
         },
-        "instancecount": 9
+        "instancecount": 6
       }
     ]
   },
