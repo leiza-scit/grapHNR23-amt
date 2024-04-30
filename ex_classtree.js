@@ -192,7 +192,11 @@ var tree={
             }
           },
           "from": {
-            "http://academic-meta-tool.xyz/vocab#antecedent1": {
+            "http://academic-meta-tool.xyz/vocab#antecedent2": {
+              "instancecount": 0,
+              "http://academic-meta-tool.xyz/vocab#RoleChainAxiom": 1
+            },
+            "http://academic-meta-tool.xyz/vocab#consequent": {
               "instancecount": 0,
               "http://academic-meta-tool.xyz/vocab#RoleChainAxiom": 1
             },
@@ -215,10 +219,10 @@ var tree={
         "data": {}
       },
       {
-        "id": "n2742ae28019e43a28f93e47d0d8863c1b1",
+        "id": "na7f3e5c9b3764e41aa0a3b8a00cef1ebb1",
         "parent": "http://www.w3.org/ns/oa#Annotation",
         "type": "instance",
-        "text": "n2742ae28019e43a28f93e47d0d8863c1b1 (n2742ae28019e43a28f93e47d0d8863c1b1)",
+        "text": "na7f3e5c9b3764e41aa0a3b8a00cef1ebb1 (na7f3e5c9b3764e41aa0a3b8a00cef1ebb1)",
         "data": {}
       },
       {

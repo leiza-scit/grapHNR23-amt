@@ -314,7 +314,7 @@ var vowlresult={
      {
       "identifier": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
       "language": "undefined",
-      "value": "n2742ae28019e43a28f93e47d0d8863c1b1",
+      "value": "na7f3e5c9b3764e41aa0a3b8a00cef1ebb1",
       "type": "label"
      }
     ]
@@ -344,11 +344,11 @@ var vowlresult={
   },
   {
    "id": 9,
-   "iri": "n2742ae28019e43a28f93e47d0d8863c1b1",
-   "baseIRI": "n2742ae28019e43a28f93e47d0d8863c1b",
+   "iri": "na7f3e5c9b3764e41aa0a3b8a00cef1ebb1",
+   "baseIRI": "na7f3e5c9b3764e41aa0a3b8a00cef1ebb",
    "instances": 0,
    "label": {
-    "IRI-based": "n2742ae28019e43a28f93e47d0d8863c1b1"
+    "IRI-based": "na7f3e5c9b3764e41aa0a3b8a00cef1ebb1"
    },
    "annotations": {
     "http://academic-meta-tool.xyz/vocab#antecedent1": [

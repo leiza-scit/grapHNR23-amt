@@ -33,13 +33,6 @@ var minivowlresult={
  ],
  "links": [
   {
-   "source": 3,
-   "target": 2,
-   "valueTo": "hasTarget",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/ns/oa#hasTarget"
-  },
-  {
    "source": 2,
    "target": 1,
    "valueTo": "domain",
@@ -47,11 +40,25 @@ var minivowlresult={
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#domain"
   },
   {
+   "source": 4,
+   "target": 2,
+   "valueTo": "antecedent2",
+   "propertyTo": "class",
+   "uriTo": "http://academic-meta-tool.xyz/vocab#antecedent2"
+  },
+  {
    "source": 2,
    "target": 1,
    "valueTo": "range",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#range"
+  },
+  {
+   "source": 2,
+   "target": 3,
+   "valueTo": "isDefinedBy",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
   },
   {
    "source": 4,
@@ -68,13 +75,6 @@ var minivowlresult={
    "uriTo": "http://academic-meta-tool.xyz/vocab#antecedent1"
   },
   {
-   "source": 2,
-   "target": 3,
-   "valueTo": "isDefinedBy",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
-  },
-  {
    "source": 4,
    "target": 2,
    "valueTo": "consequent",
@@ -82,11 +82,11 @@ var minivowlresult={
    "uriTo": "http://academic-meta-tool.xyz/vocab#consequent"
   },
   {
-   "source": 4,
+   "source": 3,
    "target": 2,
-   "valueTo": "antecedent2",
+   "valueTo": "hasTarget",
    "propertyTo": "class",
-   "uriTo": "http://academic-meta-tool.xyz/vocab#antecedent2"
+   "uriTo": "http://www.w3.org/ns/oa#hasTarget"
   }
  ]
 }
